@@ -22,3 +22,6 @@ A quant engine for optimizing portfolios based on HK stocks
 - [ ] Demonstrating the mathematical results in a user-friendly manner
 - [ ] Design and implement the Adming Panel
 
+
+## 4- Deployment
+- [ ] Dockerize the apps

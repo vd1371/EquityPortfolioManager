@@ -9,13 +9,16 @@ from .webscrapper import _get_historical_data_of_stock
 from .get_symbols import get_symbols
 
 from .utils import logger
+from .utils import clean_log_file
 
 def start_database_updating_engine():
 
-    logger.info("Hello")
+    print ("The automated database updater engine is started...")
 
     while True:
         if datetime.now().hour == 19:
+
+            clean_log_file()
 
             market = "hk"
             results = _create_list_of_stocks_table(market)

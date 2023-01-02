@@ -1,16 +1,10 @@
-from py import _find_symbols_of_hong_kong_stocks
-from py import _get_historical_data_of_stock
-
+from py import check_the_sys_args
+from py import start_database_updating_engine
 
 def run():
-    # _find_symbols_of_hong_kong_stocks()
 
-    code = "0002"
-
-    df = _get_historical_data_of_stock(code)
-
-    _update_database_with_(code, df)
-
+    check_the_sys_args()
+    start_database_updating_engine()
 
 if __name__ == "__main__":
     run()
